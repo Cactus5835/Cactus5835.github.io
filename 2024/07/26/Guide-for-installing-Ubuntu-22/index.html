@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="After getting a outmoded HP, a computer which is such behind thetimes which cannot even run Windows 11. However, what surprised me is that the laptop has 1.0TB of HDD and 256GBof SSD. Thus, I decided">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Guide for installing Ubuntu 22">
+<meta property="og:url" content="http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/index.html">
+<meta property="og:site_name" content="Cactus&#39;s blog">
+<meta property="og:description" content="After getting a outmoded HP, a computer which is such behind thetimes which cannot even run Windows 11. However, what surprised me is that the laptop has 1.0TB of HDD and 256GBof SSD. Thus, I decided">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-07-26T00:44:50.000Z">
+<meta property="article:modified_time" content="2026-05-21T13:45:37.032Z">
+<meta property="article:author" content="Lance G">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="Notes">
+<meta property="article:tag" content="Ubuntu">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Guide for installing Ubuntu 22</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/probberechts">Projects</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2024/07/26/Note-for-Bezout-s-identity/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&text=Guide for installing Ubuntu 22"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&title=Guide for installing Ubuntu 22"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&is_video=false&description=Guide for installing Ubuntu 22"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Guide for installing Ubuntu 22&body=Check out this article: http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&title=Guide for installing Ubuntu 22"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&title=Guide for installing Ubuntu 22"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&title=Guide for installing Ubuntu 22"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&title=Guide for installing Ubuntu 22"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&name=Guide for installing Ubuntu 22&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&t=Guide for installing Ubuntu 22"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Download-and-Install"><span class="toc-number">1.</span> <span class="toc-text">Download and Install</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Install-Ubuntu-onto-your-PC"><span class="toc-number">2.</span> <span class="toc-text">Install Ubuntu onto your PC</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Setup-your-Ubuntu-Desktop"><span class="toc-number">3.</span> <span class="toc-text">Setup your Ubuntu Desktop</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Install-Chrome"><span class="toc-number">3.1.</span> <span class="toc-text">Install Chrome</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Install-GNOME-Tweak"><span class="toc-number">3.2.</span> <span class="toc-text">* Install GNOME Tweak</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Download-theme-pack"><span class="toc-number">3.3.</span> <span class="toc-text">Download theme pack</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Install-theme-pack"><span class="toc-number">3.4.</span> <span class="toc-text">Install theme pack</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.5.</span> <span class="toc-text">&lt;a</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Install-Chinese-pinyin-input-method"><span class="toc-number">3.6.</span> <span class="toc-text">Install Chinese pinyin input method</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Turn-on-Asterisks-While-Typing-Sudo-Password"><span class="toc-number">3.7.</span> <span class="toc-text">Turn on Asterisks While Typing Sudo Password</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Get-a-Clean-Desktop"><span class="toc-number">3.8.</span> <span class="toc-text">Get a Clean Desktop</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Disable-Display-of-Personal-Folder"><span class="toc-number">3.8.1.</span> <span class="toc-text">Disable Display of Personal Folder</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Other-methods"><span class="toc-number">3.8.2.</span> <span class="toc-text">Other methods</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Beautify-the-Terminal"><span class="toc-number">3.9.</span> <span class="toc-text">Beautify the Terminal</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Installing-Zsh"><span class="toc-number">3.9.1.</span> <span class="toc-text">Installing Zsh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Change-the-default-shell-to-Zsh"><span class="toc-number">3.9.2.</span> <span class="toc-text">Change the default shell to Zsh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Install-Oh-My-Zsh"><span class="toc-number">3.9.3.</span> <span class="toc-text">Install Oh-My-Zsh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Configurate-Oh-My-Zsh"><span class="toc-number">3.9.4.</span> <span class="toc-text">Configurate Oh-My-Zsh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Issue-about-rendering-special-characters-in-Zsh"><span class="toc-number">3.9.5.</span> <span class="toc-text">Issue about rendering special characters in Zsh</span></a></li></ol></li></ol></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Guide for installing Ubuntu 22
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Lance G</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2024-07-26T00:44:50.000Z" class="dt-published" itemprop="datePublished">2024-07-26</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/Linux/" rel="tag">Linux</a>, <a class="p-category" href="/tags/Notes/" rel="tag">Notes</a>, <a class="p-category" href="/tags/Ubuntu/" rel="tag">Ubuntu</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <p>After getting a outmoded HP, a computer which is such behind the<br>times which cannot even run Windows 11.</p>
+<p>However, what surprised me is that the laptop has 1.0TB of HDD and 256GB<br>of SSD. Thus, I decided to install Ubuntu 22 acompanied with Windows 10<br>on that computer.</p>
+<p>Actually, I were to install Elementary OS, Ubuntu 24 and Manjaro on that<br>PC. However, it turns out that the old laptop cannot run these OS<br>properly (cannot boot Elementary OS, lagging while running Ubuntu 24,<br>and I don’t even know how to use an arch Linux system lol).</p>
+<p>Anyway, Ubuntu 22 has become my decision. And this article will<br>be focusing on installing Ubuntu 22 and its subsequent prettification.</p>
+<h1 id="Download-and-Install"><a href="#Download-and-Install" class="headerlink" title="Download and Install"></a>Download and Install</h1><ol>
+<li>Download the ISO image of Ubuntu 22 from the<br><a target="_blank" rel="noopener" href="https://ubuntu.com/download/desktop/">official website</a>.</li>
+<li>Download<br><a target="_blank" rel="noopener" href="https://rufus.ie/en/">Rufus</a><br>to create a USB drive. Remember to choose the “Partition Scheme” to<br>be “GPT”.</li>
+<li>Insert the USB drive and start the computer. Madly press F10 key to<br>enter the BIOS (Noting that this key may vary in different computer.<br>The key for entering BIOS on HP computer is F10).</li>
+<li>Boot the computer with USB Drive.</li>
+</ol>
+<h1 id="Install-Ubuntu-onto-your-PC"><a href="#Install-Ubuntu-onto-your-PC" class="headerlink" title="Install Ubuntu onto your PC"></a>Install Ubuntu onto your PC</h1><p>There is nothing notable during the installation process except for the<br>partitioning. To install Linux system aside with Windows 10, we would<br>need to manually assign each partition with their size.</p>
+<p>I will list my settings for a reference.</p>
+<ol>
+<li>Boot Dictionary <code>/boot</code>: should be around 100MB to 500MB</li>
+<li>Swap Partition: an extension of physical RAM, offering virtual<br>memory that helps maintain system stability and performance. It<br>should be 1 or 2 times of physical RAM.</li>
+<li>Root Dictionary <code>root</code>: The topmost directory in the filesystem,<br>containing all the files and directories of the operating system. I<br>assigned the rest of my SSD space (around 90GB) for this partition.</li>
+<li>(Optional) Home Dictionary <code>/home</code>: Containing user data. I assigned<br>90GB of HDD for this.</li>
+</ol>
+<h1 id="Setup-your-Ubuntu-Desktop"><a href="#Setup-your-Ubuntu-Desktop" class="headerlink" title="Setup your Ubuntu Desktop"></a>Setup your Ubuntu Desktop</h1><h2 id="Install-Chrome"><a href="#Install-Chrome" class="headerlink" title="Install Chrome"></a>Install Chrome</h2><p>Like how every Windows user would do when they first got their new<br>computer, installing Chrome is always the very first process. Download<br>the <code>.deb</code> package from<br><a target="_blank" rel="noopener" href="https://www.google.com.au/intl/en_au/chrome/">the official site of Chrome</a>. Double-click or run</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install ./google-chrome-stable_current_amd64.deb</span><br></pre></td></tr></table></figure>
+
+<p>to install Chrome.</p>
+<h2 id="Install-GNOME-Tweak"><a href="#Install-GNOME-Tweak" class="headerlink" title="* Install GNOME Tweak"></a>* Install GNOME Tweak</h2><p>Execute the commands below,</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get install gnome-tweak</span><br><span class="line"><span class="built_in">sudo</span> apt-get install chrome-gnome-shell <span class="comment"># Support for chrome</span></span><br></pre></td></tr></table></figure>
+
+<p>Then, open <a target="_blank" rel="noopener" href="https://extensions.gnome.org/">Gnome Extensions</a> to install<br><a target="_blank" rel="noopener" href="https://extensions.gnome.org/extension/19/user-themes/">User Themes</a> and<br><a target="_blank" rel="noopener" href="https://extensions.gnome.org/extension/307/dash-to-dock/">Dash to Dock</a></p>
+<h2 id="Download-theme-pack"><a href="#Download-theme-pack" class="headerlink" title="Download theme pack"></a>Download theme pack</h2><p>The theme pack is gained from<br><a target="_blank" rel="noopener" href="https://www.gnome-look.org/browse/">the Gnome look wesite</a></p>
+<p>The package I’m using is:</p>
+<p>Theme pack:<br><a target="_blank" rel="noopener" href="https://www.gnome-look.org/p/1403328/">WhiteSur Gtk Theme</a></p>
+<p>Cursor pack: <a target="_blank" rel="noopener" href="https://www.pling.com/p/1355701/">McMojave cursors</a></p>
+<p>Icon pack: <a target="_blank" rel="noopener" href="https://www.pling.com/p/1405756/">WhiteSur icon theme</a></p>
+<h2 id="Install-theme-pack"><a href="#Install-theme-pack" class="headerlink" title="Install theme pack"></a>Install theme pack</h2><p>Enter commands below to create <code>~/.icons</code> and <code>~/.themes</code> folder under the<br>home directory,</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> ~/.themes</span><br><span class="line"><span class="built_in">mkdir</span> ~/.icons</span><br></pre></td></tr></table></figure>
+
+<p>Then, extract the theme package to <code>~/.themes</code>. The cursor and icon pack<br>would need to be extracted to <code>~/.icons</code> folder.</p>
+<p>Having your theme, cursor and icons pack ready in correct path, you<br>would be able to use them by Gnome Tweak Tool.</p>
+<h2 id=""><a href="#" class="headerlink" title="&lt;a"></a>&lt;a</h2><p>href&#x3D;”#Optional-Stop-being-prompted-to-unlock-the-‘default’-keyring-on-boot”<br>class&#x3D;”headerlink”<br>title&#x3D;”(Optional) Stop being prompted to unlock the ‘default’ keyring on boot”&gt;</a>(Optional) Stop being prompted to unlock the ‘default’ keyring on boot</p>
+<p>See also <a
+href="https://askubuntu.com/questions/867/how-can-i-stop-being-prompted-to-unlock-the-default-keyring-on-boot"
+target="_blank" rel="noopener">Ask Ubuntu - How can I stop being<br>prompted to unlock the ‘default’ keyring on boot?</a></p>
+<h2 id="Install-Chinese-pinyin-input-method"><a href="#Install-Chinese-pinyin-input-method" class="headerlink" title="Install Chinese pinyin input method"></a>Install Chinese pinyin input method</h2><p>See also <a
+href="https://askubuntu.com/questions/1408873/ubuntu-22-04-chinese-simplified-pinyin-input-support"
+target="_blank" rel="noopener">Ask Ubuntu - Ubuntu 22.04 Chinese<br>(simplified) pinyin input support</a></p>
+<h2 id="Turn-on-Asterisks-While-Typing-Sudo-Password"><a href="#Turn-on-Asterisks-While-Typing-Sudo-Password" class="headerlink" title="Turn on Asterisks While Typing Sudo Password"></a>Turn on Asterisks While Typing Sudo Password</h2><p>Firstly, install Vim to edit file through terminal,</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get install vim</span><br></pre></td></tr></table></figure>
+
+<p>Modify the configuration file,</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">cp</span> /etc/sudoers /etc/sudoers.bak <span class="comment"># Make a backup for configure file</span></span><br><span class="line"><span class="built_in">sudo</span> visudo</span><br></pre></td></tr></table></figure>
+
+<p>Find <code>Defaults env_reset</code>. Append <code>,pwfeedback</code> behind it,</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Defaults env_reset,pwfeedback</span><br></pre></td></tr></table></figure>
+
+<h2 id="Get-a-Clean-Desktop"><a href="#Get-a-Clean-Desktop" class="headerlink" title="Get a Clean Desktop"></a>Get a Clean Desktop</h2><p>There are several ways to achieve this prupose,</p>
+<h3 id="Disable-Display-of-Personal-Folder"><a href="#Disable-Display-of-Personal-Folder" class="headerlink" title="Disable Display of Personal Folder"></a>Disable Display of Personal Folder</h3><p>This would be the most easiest method. Just need to toggle<br><code>Settings - Appearance - Show Personal folder</code> off.</p>
+<h3 id="Other-methods"><a href="#Other-methods" class="headerlink" title="Other methods"></a>Other methods</h3><p>See also<br><a target="_blank" rel="noopener" href="https://www.maketecheasier.com/hide-desktop-icons-ubuntu/">5 Ways to Hide Desktop Icons in<br>Ubuntu</a></p>
+<h2 id="Beautify-the-Terminal"><a href="#Beautify-the-Terminal" class="headerlink" title="Beautify the Terminal"></a>Beautify the Terminal</h2><h3 id="Installing-Zsh"><a href="#Installing-Zsh" class="headerlink" title="Installing Zsh"></a>Installing Zsh</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get install zsh</span><br></pre></td></tr></table></figure>
+
+<h3 id="Change-the-default-shell-to-Zsh"><a href="#Change-the-default-shell-to-Zsh" class="headerlink" title="Change the default shell to Zsh"></a>Change the default shell to Zsh</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> /etc/shells <span class="comment"># To check for shells already installed</span></span><br><span class="line">chsh -s /bin/zsh <span class="comment"># Change default shell</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Install-Oh-My-Zsh"><a href="#Install-Oh-My-Zsh" class="headerlink" title="Install Oh-My-Zsh"></a>Install Oh-My-Zsh</h3><p>See also<br><a target="_blank" rel="noopener" href="https://ohmyz.sh/">Oh My Zsh</a></p>
+<p>Or run,</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Configurate-Oh-My-Zsh"><a href="#Configurate-Oh-My-Zsh" class="headerlink" title="Configurate Oh-My-Zsh"></a>Configurate Oh-My-Zsh</h3><p>Edit <code>~/.zshrc</code>,</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> vim ~/.zshrc</span><br></pre></td></tr></table></figure>
+
+<p>Then set <code>ZSH_THEME</code> to the name of the theme you prefer. The detailed<br>information about themes could be found on<br><a target="_blank" rel="noopener" href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">Oh-My-Zsh Themes</a>. For me, I use<br><code>ZSH_THEME=&quot;agnoster&quot;</code></p>
+<h3 id="Issue-about-rendering-special-characters-in-Zsh"><a href="#Issue-about-rendering-special-characters-in-Zsh" class="headerlink" title="Issue about rendering special characters in Zsh"></a>Issue about rendering special characters in Zsh</h3><p>Run commands below,</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/Downloads &amp;&amp; git <span class="built_in">clone</span> https://github.com/powerline/fonts.git	<span class="comment"># Install Powerline fonts to /Downloads</span></span><br><span class="line"><span class="built_in">cd</span> fonts &amp;&amp; ./install.sh	<span class="comment"># Install Powerline fonts</span></span><br><span class="line"><span class="built_in">cd</span> &amp;&amp; <span class="built_in">rm</span> -rf ~/Downloads/fonts	<span class="comment"># Delete fond folder</span></span><br></pre></td></tr></table></figure>
+
+<p>See also <a target="_blank" rel="noopener" href="https://www.cnblogs.com/marsggbo/p/17531721.html">Oh-my-zsh主题乱码解决办法</a></p>
+<p>The issue should be fixed by now. If not, try right clicking the<br>terminal window, find “Preference”. Modify “Profiles - Unnamed - Text -<br>Custom font”.</p>
+<p>That’s it. These process takes you from installing Ubuntu to subsequent<br>prettification. By following instruction above, You will be hoping to<br>get a “fancy” (lol) Ubuntu PC.</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+          <li><a target="_blank" rel="noopener" href="http://github.com/probberechts">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Download-and-Install"><span class="toc-number">1.</span> <span class="toc-text">Download and Install</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Install-Ubuntu-onto-your-PC"><span class="toc-number">2.</span> <span class="toc-text">Install Ubuntu onto your PC</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Setup-your-Ubuntu-Desktop"><span class="toc-number">3.</span> <span class="toc-text">Setup your Ubuntu Desktop</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Install-Chrome"><span class="toc-number">3.1.</span> <span class="toc-text">Install Chrome</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Install-GNOME-Tweak"><span class="toc-number">3.2.</span> <span class="toc-text">* Install GNOME Tweak</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Download-theme-pack"><span class="toc-number">3.3.</span> <span class="toc-text">Download theme pack</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Install-theme-pack"><span class="toc-number">3.4.</span> <span class="toc-text">Install theme pack</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.5.</span> <span class="toc-text">&lt;a</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Install-Chinese-pinyin-input-method"><span class="toc-number">3.6.</span> <span class="toc-text">Install Chinese pinyin input method</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Turn-on-Asterisks-While-Typing-Sudo-Password"><span class="toc-number">3.7.</span> <span class="toc-text">Turn on Asterisks While Typing Sudo Password</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Get-a-Clean-Desktop"><span class="toc-number">3.8.</span> <span class="toc-text">Get a Clean Desktop</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Disable-Display-of-Personal-Folder"><span class="toc-number">3.8.1.</span> <span class="toc-text">Disable Display of Personal Folder</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Other-methods"><span class="toc-number">3.8.2.</span> <span class="toc-text">Other methods</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Beautify-the-Terminal"><span class="toc-number">3.9.</span> <span class="toc-text">Beautify the Terminal</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Installing-Zsh"><span class="toc-number">3.9.1.</span> <span class="toc-text">Installing Zsh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Change-the-default-shell-to-Zsh"><span class="toc-number">3.9.2.</span> <span class="toc-text">Change the default shell to Zsh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Install-Oh-My-Zsh"><span class="toc-number">3.9.3.</span> <span class="toc-text">Install Oh-My-Zsh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Configurate-Oh-My-Zsh"><span class="toc-number">3.9.4.</span> <span class="toc-text">Configurate Oh-My-Zsh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Issue-about-rendering-special-characters-in-Zsh"><span class="toc-number">3.9.5.</span> <span class="toc-text">Issue about rendering special characters in Zsh</span></a></li></ol></li></ol></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&text=Guide for installing Ubuntu 22"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&title=Guide for installing Ubuntu 22"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&is_video=false&description=Guide for installing Ubuntu 22"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Guide for installing Ubuntu 22&body=Check out this article: http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&title=Guide for installing Ubuntu 22"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&title=Guide for installing Ubuntu 22"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&title=Guide for installing Ubuntu 22"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&title=Guide for installing Ubuntu 22"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&name=Guide for installing Ubuntu 22&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/&t=Guide for installing Ubuntu 22"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2026
+    Lance G
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/probberechts">Projects</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>

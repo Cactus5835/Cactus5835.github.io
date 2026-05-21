@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="After getting a outmoded HP, a computer which is such behind thetimes which cannot even run Windows 11. However, what surprised me is that the laptop has 1.0TB of HDD and 256GBof SSD. Thus, I decided">
+    <meta name="description" content="After getting an outmoded HP, a computer which is such behind the timeswhich cannot even run Windows 11. However, what surprised me is that the laptop has 1.0TB of HDD and 256GBof SSD. Thus, I decided">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Guide for installing Ubuntu 22">
 <meta property="og:url" content="http://cactus5835.github.io/2024/07/26/Guide-for-installing-Ubuntu-22/index.html">
 <meta property="og:site_name" content="Cactus&#39;s blog">
-<meta property="og:description" content="After getting a outmoded HP, a computer which is such behind thetimes which cannot even run Windows 11. However, what surprised me is that the laptop has 1.0TB of HDD and 256GBof SSD. Thus, I decided">
+<meta property="og:description" content="After getting an outmoded HP, a computer which is such behind the timeswhich cannot even run Windows 11. However, what surprised me is that the laptop has 1.0TB of HDD and 256GBof SSD. Thus, I decided">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-07-26T00:44:50.000Z">
-<meta property="article:modified_time" content="2026-05-21T14:02:34.140Z">
+<meta property="article:modified_time" content="2026-05-21T14:28:28.897Z">
 <meta property="article:author" content="Lance G">
 <meta property="article:tag" content="Linux">
 <meta property="article:tag" content="Notes">
@@ -170,7 +170,7 @@
   
 
   <div class="content e-content" itemprop="articleBody">
-    <p>After getting a outmoded HP, a computer which is such behind the<br>times which cannot even run Windows 11.</p>
+    <p>After getting an outmoded HP, a computer which is such behind the times<br>which cannot even run Windows 11.</p>
 <p>However, what surprised me is that the laptop has 1.0TB of HDD and 256GB<br>of SSD. Thus, I decided to install Ubuntu 22 acompanied with Windows 10<br>on that computer.</p>
 <p>Actually, I were to install Elementary OS, Ubuntu 24 and Manjaro on that<br>PC. However, it turns out that the old laptop cannot run these OS<br>properly (cannot boot Elementary OS, lagging while running Ubuntu 24,<br>and I don’t even know how to use an arch Linux system lol).</p>
 <p>Anyway, Ubuntu 22 has become my decision. And this article will<br>be focusing on installing Ubuntu 22 and its subsequent prettification.</p>
@@ -188,7 +188,7 @@
 <li>Root Dictionary <code>root</code>: The topmost directory in the filesystem,<br>containing all the files and directories of the operating system. I<br>assigned the rest of my SSD space (around 90GB) for this partition.</li>
 <li>(Optional) Home Dictionary <code>/home</code>: Containing user data. I assigned<br>90GB of HDD for this.</li>
 </ol>
-<h2 id="Setup-your-Ubuntu-Desktop"><a href="#Setup-your-Ubuntu-Desktop" class="headerlink" title="Setup your Ubuntu Desktop"></a>Setup your Ubuntu Desktop</h2><h3 id="Install-Chrome"><a href="#Install-Chrome" class="headerlink" title="Install Chrome"></a>Install Chrome</h3><p>Like how every Windows user would do when they first got their new<br>computer, installing Chrome is always the very first process. Download<br>the <code>.deb</code> package from<br><a target="_blank" rel="noopener" href="https://www.google.com.au/intl/en_au/chrome/">the official site of Chrome</a>. Double-click or run</p>
+<h2 id="Setup-your-Ubuntu-Desktop"><a href="#Setup-your-Ubuntu-Desktop" class="headerlink" title="Setup your Ubuntu Desktop"></a>Setup your Ubuntu Desktop</h2><h3 id="Install-Chrome"><a href="#Install-Chrome" class="headerlink" title="Install Chrome"></a>Install Chrome</h3><p>Like how every Windows user would do when they first got their new<br>computer, installing Chrome is always the very first process. Download<br>the <code>.deb</code> package from<br><a target="_blank" rel="noopener" href="https://www.google.com.au/intl/en_au/chrome/">the official site of Chrome</a>.<br>Double-click or run</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install ./google-chrome-stable_current_amd64.deb</span><br></pre></td></tr></table></figure>
 
 <p>to install Chrome.</p>
@@ -231,7 +231,7 @@
 <h4 id="Configurate-Oh-My-Zsh"><a href="#Configurate-Oh-My-Zsh" class="headerlink" title="Configurate Oh-My-Zsh"></a>Configurate Oh-My-Zsh</h4><p>Edit <code>~/.zshrc</code>,</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> vim ~/.zshrc</span><br></pre></td></tr></table></figure>
 
-<p>Then set <code>ZSH_THEME</code> to the name of the theme you prefer. The detailed<br>information about themes could be found on<br><a target="_blank" rel="noopener" href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">Oh-My-Zsh Themes</a>. For me, I use<br><code>ZSH_THEME=&quot;agnoster&quot;</code></p>
+<p>Then set <code>ZSH_THEME</code> to the name of the theme you prefer. The detailed<br>information about themes could be found on<br><a target="_blank" rel="noopener" href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">Oh-My-Zsh Themes</a>.<br>For me, I use <code>ZSH_THEME=&quot;agnoster&quot;</code></p>
 <h4 id="Issue-about-rendering-special-characters-in-Zsh"><a href="#Issue-about-rendering-special-characters-in-Zsh" class="headerlink" title="Issue about rendering special characters in Zsh"></a>Issue about rendering special characters in Zsh</h4><p>Run commands below,</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/Downloads &amp;&amp; git <span class="built_in">clone</span> https://github.com/powerline/fonts.git	<span class="comment"># Install Powerline fonts to /Downloads</span></span><br><span class="line"><span class="built_in">cd</span> fonts &amp;&amp; ./install.sh	<span class="comment"># Install Powerline fonts</span></span><br><span class="line"><span class="built_in">cd</span> &amp;&amp; <span class="built_in">rm</span> -rf ~/Downloads/fonts	<span class="comment"># Delete fond folder</span></span><br></pre></td></tr></table></figure>
 

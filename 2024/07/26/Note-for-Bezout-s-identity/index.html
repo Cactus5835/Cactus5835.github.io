@@ -14,7 +14,7 @@
 <meta property="og:description" content="Theorem 1Let $a, b \in \mathbb{Z}$, where $\gcd(a, b) &#x3D; d$, then for all $x, y \in \mathbb{Z}$, $ax + by$ must be a multiple of $d$. Especially, there exist $x, y \in \mathbb{Z}$ such that $ax +">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-07-26T02:23:55.000Z">
-<meta property="article:modified_time" content="2026-05-21T14:03:22.612Z">
+<meta property="article:modified_time" content="2026-05-21T14:08:53.063Z">
 <meta property="article:author" content="Lance G">
 <meta property="article:tag" content="Math">
 <meta property="article:tag" content="Notes">
@@ -56,6 +56,16 @@
     
     
 	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 	
 <meta name="generator" content="Hexo 8.1.2"></head>
 
@@ -162,11 +172,10 @@
     <h2 id="Theorem-1"><a href="#Theorem-1" class="headerlink" title="Theorem 1"></a>Theorem 1</h2><p>Let $a, b \in \mathbb{Z}$, where $\gcd(a, b) &#x3D; d$, then for all $x, y \in \mathbb{Z}$, $ax + by$ must be a multiple of $d$. Especially, there exist $x, y \in \mathbb{Z}$ such that $ax + by &#x3D; d$.</p>
 <h2 id="Theorem-2"><a href="#Theorem-2" class="headerlink" title="Theorem 2"></a>Theorem 2</h2><p>The equation $ax + by &#x3D; 1$ has integer solution iff $\gcd(a, b) &#x3D; 1$.</p>
 <h2 id="Proof"><a href="#Proof" class="headerlink" title="Proof"></a>Proof</h2><h3 id="Proof-to-Theorem-1"><a href="#Proof-to-Theorem-1" class="headerlink" title="Proof to Theorem 1"></a>Proof to Theorem 1</h3><p>Let $d &#x3D; \gcd(a, b)$. Apparently, $d \mid a$ and $d \mid b$. Therefore, $d \mid ax + by$, where $x, y \in \mathbb{Z}$. Hence $ax + by &#x3D; dk$, where $k \in \mathbb{Z}^+$. Especially when $k &#x3D; 1$, $ax + by &#x3D; d$.</p>
-<h3 id="Proof-of-Theorem-2"><a href="#Proof-of-Theorem-2" class="headerlink" title="Proof of Theorem 2"></a>Proof of Theorem 2</h3><p>The equation $ax + by &#x3D; 1$ has integer solution.</p>
-<p>It is not difficult to note that Theorem 2 is a special case of Theorem 1, where $d &#x3D; 1$.</p>
-<p>Proof. Assume $a, b$ are not co-prime, where $\gcd(a, b) \neq 1$. According to Theorem 1 and the equation, we can deduce that $ax + by &#x3D; kd &#x3D; 1$, where $k \in \mathbb{Z}^+$ and $d &#x3D; \gcd(a, b)$. Since both $k$ and $d$ are integers, therefore $d &#x3D; 1$, which forms a contradiction with the proposition we made above.</p>
-<p>$\square$</p>
-<p>Omitted, since quite obvious proof by applying Theorem 1.</p>
+<h3 id="Proof-of-Theorem-2"><a href="#Proof-of-Theorem-2" class="headerlink" title="Proof of Theorem 2"></a>Proof of Theorem 2</h3><p>To prove equation $ax + by &#x3D; 1$ has integer solution.</p>
+<p>It is not difficult to see that Theorem 2 is a special case of Theorem 1, where $d &#x3D; 1$.</p>
+<p>$\implies$ Assume $a, b$ are not co-prime, where $\gcd(a, b) \neq 1$. According to Theorem 1 and the equation, we can deduce that $ax + by &#x3D; kd &#x3D; 1$, where $k \in \mathbb{Z}^+$ and $d &#x3D; \gcd(a, b)$. Since both $k$ and $d$ are integers, therefore $d &#x3D; 1$, which forms a contradiction with the proposition we made above. $\square$</p>
+<p>$\impliedby$ Omitted, since obvious proof by applying Theorem 1.</p>
 <h2 id="Application-of-Bezout’s-Identity"><a href="#Application-of-Bezout’s-Identity" class="headerlink" title="Application of Bezout’s Identity"></a>Application of Bezout’s Identity</h2><ol>
 <li>Extended Euclidean algorithm</li>
 </ol>
